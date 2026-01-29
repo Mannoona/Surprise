@@ -1,0 +1,392 @@
+body {
+    text-align: center;
+    font-family: sans-serif;
+    background-color: #2f4156;
+    overflow: hidden;
+    transition: background-color 1.5s ease, color 1.5s ease;
+}
+.line {
+    font-style: italic;
+}
+.password {
+    background-color: #c8d9e6;
+    box-shadow: 0 0 20px 0 #c8d9e6;
+    margin: 10px auto;
+    width: 300px;
+    height: 200px;
+    padding: 100px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+    display: none;
+}
+.password.active {
+    display: block;
+}
+.hidden {
+    display: none;
+}
+input {
+ margin: 60px 50px;
+ border: 1px solid #ffffff;
+ border-radius: 3px;
+ box-shadow: 0 0 15px 0 #ffffff;
+ text-align: center;
+  height: 25px;
+}
+button {
+    border: 1px solid #ffffff;
+    box-shadow: 0 0 10px 0 #ffffff;
+    border-radius: 3px;
+    background-color: #ffffff;
+    width: 100px;
+    height: 30px;
+}
+.question {
+    color :black;
+}
+.hearts span {
+    color: #4d0314;
+    position: absolute;
+    bottom: -450px;
+    animation: float 8.5s infinite ease-in;
+    opacity: 0.6;
+    font-size: 25px;
+    position: fixed;
+}
+@keyframes float {
+    to {
+        transform: translateY(-200vh);
+    }
+}
+.hearts span:nth-child(1) {
+    left: 10%;
+    animation-delay: 0s;
+}
+.hearts span:nth-child(2) {
+    left: 20%;
+    animation-delay: 1s;
+}
+.hearts span:nth-child(3) {
+    left: 30%;
+    animation-delay: 2s;
+}
+.hearts span:nth-child(4) {
+    left: 40%;
+    animation-delay: 3s;
+}
+.hearts span:nth-child(5) {
+    left: 50%;
+    animation-delay: 4s;
+}
+.hearts span:nth-child(6) {
+    left: 60%;
+    animation-delay: 4.2s;
+}
+.hearts span:nth-child(7) {
+    left: 70%;
+    animation-delay: 3.5s;
+}
+.hearts span:nth-child(8) {
+    left: 80%;
+    animation-delay: 5.5s;
+}
+.hearts span:nth-child(9) {
+    left: 90%;
+    animation-delay: 5.2s;
+}
+.hearts span:nth-child(10) {
+    left: 100%;
+    animation-delay: 4.5s;
+}
+.hearts span:nth-child(11) {
+    left: 15%;
+    animation-delay: 2.3s;
+}
+.hearts span:nth-child(12) {
+    left: 25%;
+    animation-delay: 3.5s;
+}
+.hearts span:nth-child(13) {
+    left: 35%;
+    animation-delay: 6.5s;
+}
+.hearts span:nth-child(14) {
+    left: 45%;
+    animation-delay: 4.5s;
+}
+.hearts span:nth-child(15) {
+    left: 55%;
+    animation-delay: 1.5s;
+}
+.hearts span:nth-child(16) {
+    left: 65%;
+    animation-delay: 2.7s;
+}
+.hearts span:nth-child(17) {
+    left: 75%;
+    animation-delay: 4.2s;
+}
+.hearts span:nth-child(18) {
+    left: 85%;
+    animation-delay: 3.8s;
+}
+.hearts span:nth-child(19) {
+    left: 95%;
+    animation-delay: 1.2s;
+}
+.hearts span:nth-child(20) {
+    left: 5%;
+    animation-delay: 1s;
+}
+.hearts span:nth-child(21) {
+    left: 1%;
+    animation-delay: 1.2s;
+}
+.q1, .q2, .q3 {
+    margin: 50% auto;
+}
+button:hover {
+    box-shadow: 0 0 70px 0 #ffffff;
+    width: 120px;
+    height: 35px;
+    font-size: 19px;
+    color: #2f4156;
+}
+input:focus {
+   outline: #2f4156 solid 2px;
+}
+body.letter-mode {
+    color: #4d0314;
+    transition: background 1.5s ease;
+    background: #ffe9ec;
+}
+/* more hearts */
+body.letter-mode .hearts span {
+    color: #ff4d79;
+    opacity: 0.8;
+}
+#letter {
+    background-color: #66021f ;
+    color: #ffe9ec;
+    height: 300px;
+    width: 550px;
+    margin: 50% auto;
+    padding: 45px;
+    box-shadow: 0 0 60px 0 #66021f;
+    border: 1px solid #66021f; 
+}
+.signature {
+    text-align: right;
+    font-style: italic;
+    font-weight: bold;
+}
+img {
+    width: 200px;
+    height: 200px;
+    background-color: #ffe9ec;
+    border: 2px solid #ffe9ec;
+    box-shadow: 0 0 20px 0 #ff4d79;
+    position: absolute;
+}
+.cat {
+    top: 60px;
+    right: 38%;
+}
+.hug {
+    bottom: 90px;
+    left: 45px;
+}
+.cake {
+    bottom: 90px;
+    right: 45px;
+}
+#openMeBtn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 330px;
+    height: 200px;
+    font-size: 20px;
+    font-family: initial;
+    color: black;
+    background-color: #4d0314;
+    box-shadow: 0 0 20px 0 #4d0314;
+    border: 1px solid black;
+    font-weight: bold;
+}
+#openMeBtn:hover {
+    width: 340px;
+    height: 220px;
+    box-shadow: 0 0 40px 0 #4d0314;
+}
+.error:empty  {
+    display: none;
+}
+.error:not(:empty) {
+    color: black;
+    font-size: 17px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 90px;
+    overflow: hidden;
+    margin-left: 15px;
+    padding: 10px;
+    text-align: center;
+    background-color: rgba(255, 77, 109, 0.1);
+    font-weight: bold;
+    width: 250px;
+    border-radius: 10px;
+    border: 2px dashed #4d0314;
+    text-shadow: 0 0 5px #4d0314;
+    position: relative;
+    animation: errorPulse 1.5s infinite ease-in-out;
+}
+@keyframes errorPulse {
+    0% {
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0  0 15px rgba(255, 0 ,43, 0.2);
+        background-color: rgba(255, 0 ,43, 0.3);
+    }
+    25% {
+        transform: scale(1.03) rotate(0.5deg);
+        box-shadow: 0 0 20px rgba(255, 0, 43, 0.4);
+        background-color: rgba(255, 0 ,43, 0.5);
+    }
+    50% {
+        transform: scale(1.05) rotate(0deg);
+        box-shadow: 0 0 15px rgba(255, 0, 43, 0.2);
+        background-color: rgba(255, 0 ,43, 0.7);
+    }
+    75% {
+        transform: scale(1.03) rotate(-0.5deg);
+        box-shadow: 0 0 20px rgba(255, 0, 43, 0.4);
+        background-color: rgba(255, 0 ,43, 0.5);
+    }
+    100% {
+        transform: scale(1) rotate(0deg);
+        box-shadow: 0 0 15px rgba(255, 0, 43, 0.2);
+        background-color: rgba(255, 0 ,43, 0.3);
+    }
+}
+/* media query*/           
+/*for big screens*/                                                                                                                     
+@media screen and (max-width: 767px) {
+    .password {
+        width: 240px;
+        height: 167px;
+        padding: 83px 17px;
+        font-size: 17px;
+    }
+    .question {
+        font-size: 18px;
+        margin: 0 0 20px 0;
+    }
+    input {
+        margin: 50px auto 20px auto;
+        width: 180px;
+        height: 22px;
+        font-size: 14px;
+        display: block;
+    }
+    button {
+        width: 85px;
+        height: 26px;
+        font-size: 14px;
+        margin: 40px auto;
+    }
+    button:hover {
+        width: 105px;
+        height: 31px;
+        font-size: 15px;
+    }
+    .q1, .q2, .q3 {
+        margin: 50% auto;
+    }
+    .hearts span {
+        font-size: 16px;
+    }
+    #openMeBtn {
+        top: 45%;
+        width: 250px;
+        height: 150px;
+    }
+    #letter {
+        height: 200px;
+        width: 300px;
+        margin: 60% auto;
+        padding: 20px;
+        padding-bottom: 1px;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+    img {
+        width: 150px;
+        height: 150px;
+    }
+    .cat {
+        top: 20px;
+        right: 30%;
+    }
+    .hug {
+        bottom: 90px;
+        left: 20px;
+    }
+    .cake {
+        bottom: 90px;
+        right: 20px;
+    }
+    .error:not(:empty) {
+        margin-top: 45px;
+        margin-left: -5px;
+        width: 240px;
+    }
+    #letter::-webkit-scrollbar {
+        width: 8px;
+    }
+    #letter::-webkit-scrollbar-track {
+        background: #66021f;
+        border-radius: 10px;
+    }
+    #letter::-webkit-scrollbar-thumb {
+        background: #66021f;
+        border-radius: 10px;
+    }
+} 
+/* for small phones*/
+@media screen and (max-width: 480px) {
+    .password {
+        width: 240px;
+        height: 270px;
+        padding: 73px 15px;
+        font-size: 16px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        box-sizing: border-box;
+      }
+    .question {
+        font-size: 16px;
+        margin: 0 0 15px 0;
+    }
+    input {
+        margin: 45px auto;
+        width: 160px;
+        height: 20px;
+        font-size: 13px;
+    }
+    button {
+        width: 75px;
+        height: 24px;
+        font-size: 13px;
+    }
+    button:hover {
+        width: 80px;
+        height: 29px;
+        font-size: 17px;
+    }
+    .hearts span {
+        font-size: 14px;
+    }
+}
