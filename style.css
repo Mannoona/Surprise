@@ -187,6 +187,19 @@ img {
     border: 2px solid #ffe9ec;
     box-shadow: 0 0 20px 0 #ff4d79;
     position: absolute;
+    animation: gentleSway 4s infinite ease-in-out;
+    transform-origin: center; 
+    }
+@keyframes gentleSway {
+    0% {
+        transform: rotate(-3deg);
+    }
+    50% {
+        transform: rotate(5deg);
+    }
+    100% {
+        transform: rotate(-3deg);
+    }
 }
 .cat {
     top: 60px;
@@ -315,10 +328,10 @@ img {
         height: 200px;
         width: 300px;
         margin: 60% auto;
-        padding: 20px;
-        padding-bottom: 1px;
+        padding: 20px 30px 1px 30px;
         overflow-y: auto;
         overflow-x: hidden;
+        line-height: 1.6;
     }
     img {
         width: 150px;
