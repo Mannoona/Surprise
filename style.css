@@ -202,8 +202,6 @@ img {
 .cat {
     top: 60px;
     right: 38%;
-        animation: gentleSway 4s infinite ease-in-out;
-            transform-origin: center; 
 }
 .hug {
     bottom: 90px;
