@@ -186,19 +186,8 @@ img {
     background-color: #ffe9ec;
     border: 2px solid #ffe9ec;
     box-shadow: 0 0 20px 0 #ff4d79;
-    position: absolute;
-    }
-@keyframes gentleSway {
-    0% {
-        transform: rotate(-3deg);
-    }
-    50% {
-        transform: rotate(2deg);
-    }
-    100% {
-        transform: rotate(-3deg);
-    }
-}
+    position: absolute;}
+
 .cat {
     top: 60px;
     right: 38%;
